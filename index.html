@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>fw-gi.com 流量週報</title>
+<style>
+  :root{
+    --teal:#0F766E;
+    --teal-light:#F0FDFA;
+    --ink:#333;
+    --muted:#666;
+    --line:#e2e8e6;
+  }
+  *{box-sizing:border-box;}
+  body{
+    font-family:'Microsoft JhengHei','微軟正黑體',-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;
+    color:var(--ink); line-height:1.7; margin:0; background:#fafafa;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:24px 18px 60px;}
+  header.site{border-bottom:3px solid var(--teal);padding-bottom:14px;margin-bottom:8px;}
+  header.site h1{color:var(--teal);font-size:1.55rem;margin:0 0 4px;}
+  header.site p{color:var(--muted);margin:0;font-size:0.92rem;}
+  .report{background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px 22px 26px;margin-top:24px;box-shadow:0 1px 3px rgba(0,0,0,0.04);}
+  .report > h2{color:var(--teal);font-size:1.2rem;margin:0 0 4px;border-bottom:2px solid var(--teal);padding-bottom:8px;}
+  .report .period{color:var(--muted);font-size:0.88rem;margin:0 0 10px;}
+  h3{color:var(--teal);margin:22px 0 10px;font-size:1.02rem;}
+  .cards{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:6px;}
+  .card{flex:1 1 150px;background:var(--teal-light);border:1px solid var(--line);border-radius:10px;padding:12px 14px;}
+  .card .label{font-size:0.82rem;color:var(--muted);}
+  .card .value{font-size:1.7rem;font-weight:700;color:var(--ink);line-height:1.2;}
+  .delta{font-size:0.8rem;font-weight:600;padding:1px 6px;border-radius:6px;margin-left:4px;vertical-align:middle;}
+  .delta.down{background:#fde8e8;color:#b42318;}
+  .delta.up{background:#dcfce7;color:#15803d;}
+  .delta.flat{background:#eef2f1;color:#555;}
+  table{border-collapse:collapse;width:100%;margin-bottom:6px;font-size:0.95rem;}
+  th,td{padding:8px 12px;border:1px solid var(--line);}
+  th{text-align:left;background:var(--teal-light);}
+  td.num,th.num{text-align:right;}
+  .three{display:flex;gap:12px;flex-wrap:wrap;}
+  .three > div{flex:1 1 200px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px 14px;font-size:0.93rem;}
+  .three b{color:var(--teal);}
+  .note{color:var(--muted);font-size:0.85rem;background:#f7faf9;border-left:3px solid var(--teal);padding:8px 12px;border-radius:0 6px 6px 0;}
+  footer{margin-top:34px;color:#888;font-size:0.82rem;border-top:1px solid var(--line);padding-top:16px;}
+  footer a{color:var(--teal);text-decoration:none;}
+  .toc{margin-top:18px;font-size:0.9rem;color:var(--muted);}
+  .toc a{color:var(--teal);text-decoration:none;margin-right:10px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="site">
+    <h1>fw-gi.com 流量週報</h1>
+    <p>邱芳瑋醫師個人網站 · Vercel Web Analytics · 每週一自動更新</p>
+  </header>
+
+  <nav class="toc" aria-label="歷期報告">
+    <strong>歷期：</strong>
+    <a href="#w-2026-06-01">2026-06-01 ~ 06-07</a>
+  </nav>
+
+  <!-- ============ 每週新報告請貼在這個註解下方（最新的放最上面） ============ -->
+
+  <section class="report" id="w-2026-06-01">
+    <h2>📊 2026-06-01 ~ 2026-06-07</h2>
+    <p class="period">資料區間：過去 7 天 · 產生時間：2026-06-08</p>
+
+    <div class="cards">
+      <div class="card"><div class="label">訪客數</div><div class="value">46 <span class="delta down">-30%</span></div></div>
+      <div class="card"><div class="label">頁面瀏覽</div><div class="value">62 <span class="delta down">-41%</span></div></div>
+      <div class="card"><div class="label">跳出率</div><div class="value">72% <span class="delta flat">-1%</span></div></div>
+    </div>
+
+    <h3>📄 各頁面瀏覽（前 10 名）</h3>
+    <table>
+      <tr><th>頁面路徑</th><th class="num">訪客數</th></tr>
+      <tr><td>/education/painless-endoscopy</td><td class="num">30</td></tr>
+      <tr><td>/</td><td class="num">13</td></tr>
+      <tr><td>/weekly</td><td class="num">6</td></tr>
+    </table>
+
+    <h3>🔗 流量來源（前 10）</h3>
+    <table>
+      <tr><th>來源</th><th class="num">訪客數</th></tr>
+      <tr><td>facebook.com</td><td class="num">4</td></tr>
+      <tr><td>google.com</td><td class="num">3</td></tr>
+    </table>
+    <p class="note">FB / LINE app 內建瀏覽器點過來通常會被歸為「Direct」（無 referrer），所以瀏覽器分布更能反映真實導流管道。本週瀏覽器以 Line（59%）為最大宗，顯示多數流量其實來自 LINE 分享。</p>
+
+    <h3>📱 裝置・瀏覽器・系統</h3>
+    <div class="three">
+      <div><b>裝置</b><br>Mobile 74%<br>Desktop 26%</div>
+      <div><b>瀏覽器</b><br>Line 59%<br>Chrome 26%<br>Mobile Safari 13%<br>Facebook 2%</div>
+      <div><b>作業系統</b><br>iOS 52%<br>Android 22%<br>Windows 22%<br>GNU/Linux 4%</div>
+    </div>
+
+    <h3>🌏 國家</h3>
+    <p>Taiwan 87%　·　United States of America 11%　·　Ireland 2%</p>
+  </section>
+
+  <!-- ============ /每週報告區塊結束 ============ -->
+
+  <footer>
+    此頁由 Claude 排程任務自動產生與更新。<br>
+    資料來源：<a href="https://vercel.com/chiufw-4458s-projects/aievolution/analytics" target="_blank" rel="noopener">Vercel Web Analytics Dashboard</a><br>
+    網站：<a href="https://fw-gi.com" target="_blank" rel="noopener">fw-gi.com</a>
+  </footer>
+
+</div>
+</body>
+</html>
